@@ -4,21 +4,39 @@
     <title>Navigation Bar</title>
     <style>
         ul {
-            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;   
+        }
+        li {
+            float:none;
+            background-color: #f1f1f1
+        }
+        li a{
+            display: block;
+            color: #0000;
+            padding: 10px 10px;
+            text-decoration:none;
+        }
+        li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: green;
+            color: black;
         }
 
-        a {
-            
-        }
     </style>
 </head>
 
 <body>
     <ul>
-        <li><a href="#">first</a></li>
-        <li><a href="#">second</a></li>
-        <li><a href="#">third</a></li>
-        <li><a href="#">fourth</a></li>
+        <li><a class=active href="#home">home</a></li>
+        <li><a href="#second">second</a></li>
+        <li><a href="#third">third</a></li>
+        <li><a href="#fourth">fourth</a></li>
     </ul>
 </body>
 
